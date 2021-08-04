@@ -7,3 +7,9 @@ Porting of the [ADAFRUIT GFX library](https://github.com/adafruit/Adafruit-GFX-L
 1. Use it.
 
 See main.cpp in the root of the repo for an example of use.
+
+# Supported and tested displays
+1. SSD1306, SSD1309
+
+# Roadmap
+1. Enforce testing, add implementation for TFT and other displays.

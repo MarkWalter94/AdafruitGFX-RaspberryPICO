@@ -2,22 +2,22 @@
 #include "hardware/spi.h"
 #include <Adafruit_SSD1306.h>
 #include <Adafruit_SPIDevice.h>
-//#define CS 17
-//#define DC 20
-//#define RST 21
-//#define MISO PICO_DEFAULT_SPI_RX_PIN
-//#define MOSI PICO_DEFAULT_SPI_TX_PIN
-//#define SCLK PICO_DEFAULT_SPI_SCK_PIN
+#define CS 17
+#define DC 20
+#define RST 21
+#define MISO PICO_DEFAULT_SPI_RX_PIN
+#define MOSI PICO_DEFAULT_SPI_TX_PIN
+#define SCLK PICO_DEFAULT_SPI_SCK_PIN
 #define SDA 18
-#define SCL 19
+// #define SCL 19
 #define BITRATE 1000 * 1000 //1 MHz
 #define DISPLAY_WIDTH 128
-#define DISPLAY_HEIGHT 32
+#define DISPLAY_HEIGHT 64
 
 
-//Adafruit_GrayOLED _display(1, 128, 64, spi_default, DC, RST, CS, MISO, MOSI, SCLK, BITRATE);
-Adafruit_I2CDevice _i2cdev(0x3C, SDA, SCL, &i2c1_inst, BITRATE);
-Adafruit_SSD1306 _display(DISPLAY_WIDTH, DISPLAY_HEIGHT, &_i2cdev);
+//Adafruit_I2CDevice _i2cdev(0x3C, SDA, SCL, &i2c1_inst, BITRATE);
+Adafruit_SPIDevice _spidev(CS, SCLK, MISO, MOSI, BITRATE);
+Adafruit_SSD1306 _display(DISPLAY_WIDTH, DISPLAY_HEIGHT, &_spidev, DC, RST, CS);
 int main()
 {
     stdio_init_all();
@@ -27,7 +27,7 @@ int main()
     _display.begin();
     //Shows splash screen
     _display.display();
-    sleep_ms(1000);
+    sleep_ms(10000);
 
     _display.clearDisplay();
     _display.setTextColor(WHITE);

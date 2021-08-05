@@ -450,3 +450,8 @@ bool Adafruit_SPIDevice::write_then_read(uint8_t *write_buffer,
 
   return true;
 }
+
+void Adafruit_SPIDevice::setSpeed(uint32_t newSpeed){
+  _freq = newSpeed;
+  spi_set_baudrate(_spi, _freq);
+}

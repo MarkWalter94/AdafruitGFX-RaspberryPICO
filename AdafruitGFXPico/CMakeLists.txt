@@ -16,6 +16,8 @@ add_library(AdafruitGFXPico
     Print.cpp
     Adafruit_GFX.cpp    
     Adafruit_SSD1306.cpp
+    Adafruit_SPITFT.cpp
+    Adafruit_ILI9341.cpp
 )
 
 # Pull in our pico_stdlib which pulls in commonly used features

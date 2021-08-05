@@ -15,3 +15,6 @@
 #define SPI_MODE1 0x04
 #define SPI_MODE2 0x08
 #define SPI_MODE3 0x0C
+
+
+#define pgm_read_byte(addr) (*(const unsigned char *)(addr)) ///<  workaround for non-AVR

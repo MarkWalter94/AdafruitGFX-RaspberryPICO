@@ -36,9 +36,6 @@
  *
  */
 
-#define pgm_read_byte(addr) \
-  (*(const unsigned char *)(addr)) ///<  workaround for non-AVR
-
 #include "Adafruit_SSD1306.h"
 #include "splash.h"
 #include <Adafruit_GFX.h>

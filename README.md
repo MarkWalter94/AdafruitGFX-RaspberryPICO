@@ -13,3 +13,7 @@ See main.cpp in the root of the repo for an example of use.
 
 # Roadmap
 1. Enforce testing, add implementation for TFT and other displays.
+
+# Images
+![SSD 1306 128*32 OLED](https://github.com/MarkWalter94/AdafruitGFX-RaspberryPICO/blob/main/images/SSD1306_128_32.jpg)
+![SSD 1309 128*64 OLED](https://github.com/MarkWalter94/AdafruitGFX-RaspberryPICO/blob/main/images/SSD1309_128_64.jpg)

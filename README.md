@@ -9,10 +9,10 @@ Porting of the [ADAFRUIT GFX library](https://github.com/adafruit/Adafruit-GFX-L
 See main.cpp in the root of the repo for an example of use.
 
 # Supported and tested displays
-1. SSD1306, SSD1309
+1. SSD1306, SSD1309, ILI9341
 
 # Roadmap
-1. Enforce testing, add implementation for TFT and other displays.
+1. Enforce testing, add implementation  other displays.
 
 # Images
 ![SSD 1306 128*32 OLED](https://github.com/MarkWalter94/AdafruitGFX-RaspberryPICO/blob/main/images/SSD1306_128_32.jpg)

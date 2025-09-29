@@ -3,7 +3,7 @@ Porting of the [ADAFRUIT GFX library](https://github.com/adafruit/Adafruit-GFX-L
 
 # How to use the library
 1. Put the folder AdafruitGFX of this repository under your project
-1. Add the library to your CMakeLists project with the [add_subdirectory](https://cmake.org/cmake/help/latest/command/add_subdirectory.html) command.
+1. Add the library to your CMakeLists project with the [add_subdirectory](https://cmake.org/cmake/help/latest/command/add_subdirectory.html) command and the [target_link_libraries](https://cmake.org/cmake/help/latest/command/target_link_libraries.html) command.
 1. Use it.
 
 See main.cpp in the root of the repo for an example of use.
